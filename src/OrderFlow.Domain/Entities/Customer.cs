@@ -8,6 +8,8 @@ public class Customer
     public string Name {get; private set;}
     public string Email {get; private set;}
 
+    private Customer(){}
+
     public Customer(string name, string email){
         ValidateName(name);
         ValidateEmail(email);

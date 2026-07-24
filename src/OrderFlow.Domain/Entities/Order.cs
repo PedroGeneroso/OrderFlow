@@ -13,6 +13,8 @@ public class Order
     public IReadOnlyCollection<OrderItem> Items => _items.AsReadOnly();
     public decimal Total => _items.Sum(item => item.Subtotal);
 
+    private Order(){}
+
     public Order(Guid customerId)
     {
         Id = Guid.NewGuid();

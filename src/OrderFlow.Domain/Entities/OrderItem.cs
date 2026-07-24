@@ -8,6 +8,8 @@ public class OrderItem
     public decimal UnitPrice {get; private set;}
     public decimal Subtotal => Quantity * UnitPrice;
 
+    private OrderItem(){}
+
     internal OrderItem(Guid productId, int quantity, decimal unitPrice)
     {
         Validate(quantity, unitPrice);

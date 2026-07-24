@@ -9,6 +9,8 @@ public class Product
     public decimal Price {get; private set;}
     public int StockQuantity{get; private set;} = 0;
 
+    private Product(){}
+
     public Product(string name, decimal price, int stockQuantity){
         Id = Guid.NewGuid();
         ValidateName(name);
