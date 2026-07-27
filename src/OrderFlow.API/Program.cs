@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
+using OrderFlow.Domain.Repositories;
 using OrderFlow.Infrastructure.Persistence;
+using OrderFlow.Infrastructure.Persistence.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +11,7 @@ builder.Services.AddOpenApi();
 builder.Services.AddDbContext<OrderFlowDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
