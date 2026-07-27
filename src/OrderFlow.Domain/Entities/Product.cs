@@ -8,17 +8,20 @@ public class Product
     public string Name {get; private set;}
     public decimal Price {get; private set;}
     public int StockQuantity{get; private set;} = 0;
+    public Guid CategoryId {get; private set;}
 
     private Product(){}
 
-    public Product(string name, decimal price, int stockQuantity){
+    public Product(string name, decimal price, int stockQuantity, Guid categoryId){
         Id = Guid.NewGuid();
         ValidateName(name);
         ValidatePrice(price);
         ValidateStockQuantity(stockQuantity);
+        ValidateCategoryId(categoryId);
         Name = name;
         Price = price;
         StockQuantity = stockQuantity;
+        CategoryId = categoryId;
         
     }
 
@@ -67,6 +70,13 @@ public class Product
         if (quantity == 0)
         {
             throw new ArgumentException("Quantity cannot be equal to 0", nameof(quantity));
+        }
+    }
+    private void ValidateCategoryId(Guid categoryId)
+    {
+        if(categoryId == Guid.Empty)
+        {
+            throw new ArgumentException("Product category cannot be empty");
         }
     }
 }
