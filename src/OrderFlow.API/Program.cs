@@ -1,4 +1,10 @@
+using FluentValidation;
+using FluentValidation.AspNetCore;
 using Microsoft.EntityFrameworkCore;
+using OrderFlow.Application.Mappings;
+using OrderFlow.Application.Validators.Category;
+using OrderFlow.Application.Validators.Customer;
+using OrderFlow.Application.Validators.Product;
 using OrderFlow.Domain.Repositories;
 using OrderFlow.Infrastructure.Persistence;
 using OrderFlow.Infrastructure.Persistence.Repositories;
@@ -12,6 +18,12 @@ builder.Services.AddDbContext<OrderFlowDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+builder.Services.AddAutoMapper(cfg=>{},typeof(ProductProfile).Assembly);
+
+builder.Services.AddValidatorsFromAssemblyContaining<CreateProductDtoValidator>();
+builder.Services.AddFluentValidationAutoValidation();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

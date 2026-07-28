@@ -127,3 +127,11 @@ C:\Users\Pedro Generoso\Git Repositories\OrderFlow\src\OrderFlow.API\bin\Debug\n
 C:\Users\Pedro Generoso\Git Repositories\OrderFlow\src\OrderFlow.API\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 C:\Users\Pedro Generoso\Git Repositories\OrderFlow\src\OrderFlow.API\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 C:\Users\Pedro Generoso\Git Repositories\OrderFlow\src\OrderFlow.API\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\Pedro Generoso\Git Repositories\OrderFlow\src\OrderFlow.API\bin\Debug\net10.0\AutoMapper.dll
+C:\Users\Pedro Generoso\Git Repositories\OrderFlow\src\OrderFlow.API\bin\Debug\net10.0\FluentValidation.dll
+C:\Users\Pedro Generoso\Git Repositories\OrderFlow\src\OrderFlow.API\bin\Debug\net10.0\FluentValidation.AspNetCore.dll
+C:\Users\Pedro Generoso\Git Repositories\OrderFlow\src\OrderFlow.API\bin\Debug\net10.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\Pedro Generoso\Git Repositories\OrderFlow\src\OrderFlow.API\bin\Debug\net10.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Pedro Generoso\Git Repositories\OrderFlow\src\OrderFlow.API\bin\Debug\net10.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Pedro Generoso\Git Repositories\OrderFlow\src\OrderFlow.API\bin\Debug\net10.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Pedro Generoso\Git Repositories\OrderFlow\src\OrderFlow.API\bin\Debug\net10.0\Microsoft.IdentityModel.Tokens.dll

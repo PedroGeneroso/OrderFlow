@@ -10,6 +10,8 @@ public class Product
     public int StockQuantity{get; private set;} = 0;
     public Guid CategoryId {get; private set;}
 
+    public Category Category { get; private set; } = null!;
+
     private Product(){}
 
     public Product(string name, decimal price, int stockQuantity, Guid categoryId){
