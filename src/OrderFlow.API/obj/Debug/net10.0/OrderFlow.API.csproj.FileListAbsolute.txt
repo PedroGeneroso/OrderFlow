@@ -135,3 +135,6 @@ C:\Users\Pedro Generoso\Git Repositories\OrderFlow\src\OrderFlow.API\bin\Debug\n
 C:\Users\Pedro Generoso\Git Repositories\OrderFlow\src\OrderFlow.API\bin\Debug\net10.0\Microsoft.IdentityModel.JsonWebTokens.dll
 C:\Users\Pedro Generoso\Git Repositories\OrderFlow\src\OrderFlow.API\bin\Debug\net10.0\Microsoft.IdentityModel.Logging.dll
 C:\Users\Pedro Generoso\Git Repositories\OrderFlow\src\OrderFlow.API\bin\Debug\net10.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Pedro Generoso\Git Repositories\OrderFlow\src\OrderFlow.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Pedro Generoso\Git Repositories\OrderFlow\src\OrderFlow.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Pedro Generoso\Git Repositories\OrderFlow\src\OrderFlow.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll

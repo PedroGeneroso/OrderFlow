@@ -3,7 +3,7 @@ using OrderFlow.Application.DTOs.Product;
 
 namespace OrderFlow.Application.Validators.Product;
 
-public class CreateProductDtoValidator : AbstractValidator<CreateProductoDto>
+public class CreateProductDtoValidator : AbstractValidator<CreateProductDto>
 {
     public CreateProductDtoValidator()
     {

@@ -18,6 +18,14 @@ public class Customer
         Email = email;
     }
 
+    public void UpdateDetails(string name, string email)
+    {
+        ValidateName(name);
+        ValidateEmail(email);
+        Name = name;
+        Email = email;
+    }
+
     private void ValidateName(string name)
     {
         ArgumentException.ThrowIfNullOrWhiteSpace(name);

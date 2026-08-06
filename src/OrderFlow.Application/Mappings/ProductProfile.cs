@@ -10,7 +10,7 @@ public class ProductProfile : Profile
     {
         CreateMap<Product, ProductResponseDto>()
             .ForMember(dest => dest.CategoryName, opt => opt.MapFrom(src => src.Category.Name));
-        CreateMap<CreateProductoDto, Product>()
+        CreateMap<CreateProductDto, Product>()
             .ConstructUsing(dto => new Product(dto.Name, dto.Price, dto.StockQuantity, dto.CategoryId));
     }
 }

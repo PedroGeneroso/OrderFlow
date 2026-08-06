@@ -43,6 +43,14 @@ public class Product
         StockQuantity += quantity;
     }
 
+    public void UpdateDetails(string name, decimal price)
+    {
+        ValidateName(name);
+        ValidatePrice(price);
+        Name = name;
+        Price = price;
+    }
+
 // Validation of arguments
     private void ValidateName(string name)
     {

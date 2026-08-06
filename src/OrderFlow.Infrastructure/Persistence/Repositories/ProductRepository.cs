@@ -20,7 +20,15 @@ public class ProductRepository : Repository<Product>, IProductRepository
     public async Task<IEnumerable<Product>> GetByCategoryAsync(Guid categoryId)
     {
         return await _dbSet
+            .Include(p => p.Category)
             .Where(p => p.CategoryId == categoryId)
+            .ToListAsync();
+    }
+
+    public new async Task<IEnumerable<Product>> GetAllAsync()
+    {
+        return await _dbSet
+            .Include(p => p.Category)
             .ToListAsync();
     }
 }
